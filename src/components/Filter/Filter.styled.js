@@ -1,15 +1,10 @@
 import styled from "styled-components";
 
-export const FilterTitle = styled.label`
-margin-bottom: 10px;
-color: #9932CC;
-font-weight: bold;
-font-size: 30px;
-display: flex;
-padding-left: auto;
+export const FilterTitle = styled.div`
+width: 320px;
+margin: 0 auto;
 flex-direction: column;
 justify-content: center;
-gap: 20px;
 `;
 
 export const FilterFind = styled.label`

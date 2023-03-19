@@ -30,7 +30,7 @@ export const ContactList = () => {
       {vizibleContact.map(contact => (
         <ContactItem key={contact.id}>
           <WrapperIcon>
-            <IconContext.Provider value={{ color: '#e6b0aa', size: 30 }}>
+            <IconContext.Provider value={{ color: '#DA70D6', size: 30 }}>
               <MdPermContactCalendar />
             </IconContext.Provider>
             {contact.name}: {contact.number}
