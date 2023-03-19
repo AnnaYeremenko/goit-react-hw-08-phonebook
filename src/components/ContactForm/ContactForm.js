@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { InputTitle, InputText, Button} from './ContactForm.styled';
-import { addContact } from 'redux/operations';
-import { selectContacts } from 'redux/contactsSlice';
+import { InputTitle, InputText, Button, FormContact} from './ContactForm.styled';
+import { addContact } from 'redux/contacts/operations';
+import { selectContacts } from 'redux/contacts/contactsSlice';
 
 export const ContactForm = () => {
   const dispatch = useDispatch();
@@ -25,7 +25,7 @@ export const ContactForm = () => {
     event.target.reset();
   };
     return (
-        <form onSubmit={handleSubmit}>
+        <FormContact onSubmit={handleSubmit}>
             <InputTitle>Name </InputTitle>
             <InputText
             type="text"
@@ -43,6 +43,6 @@ export const ContactForm = () => {
           required
           />
             <Button type="submit">Add contact</Button>
-        </form>
+        </FormContact>
     );
 };

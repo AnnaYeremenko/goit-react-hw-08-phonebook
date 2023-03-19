@@ -31,3 +31,8 @@ export const ContactItem = styled.li`
   justify-content: space-around; 
   color: #800080;
 `;
+export const WrapperIcon = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+`;

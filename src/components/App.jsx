@@ -1,16 +1,16 @@
 import { useEffect, lazy } from 'react';
 import { useDispatch } from 'react-redux';
-import { Route, Routes} from ' react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import { Layout } from './Layout/Layout';
 import { useAuth }from 'hooks';
 import { refreshUser } from 'redux/auth/operations';
-import { RestrictedRoute } from './RestreictedRoute';
+import { RestrictedRoute } from './RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute';
 
 const HomePage = lazy(() => import('../pages/Home'));
-const RegisterPage = lazy(() => import('..pages/Register'));
-const LoginPage = lazy(() => import('../page/Login'));
-const ContactsPage = lazy(() => import('../page/Contacts'));
+const RegisterPage = lazy(() => import('../pages/Register'));
+const LoginPage = lazy(() => import('../pages/Login'));
+const ContactsPage = lazy(() => import('../pages/Contacts'));
 
 
 export const App = () => {
@@ -18,7 +18,7 @@ export const App = () => {
   const { isRefreshing } = useAuth;
 
   useEffect(() => {
-    dispatch(fetchContacts());
+    dispatch(refreshUser());
   }, [dispatch]);
   
   return isRefreshing ? (
@@ -45,7 +45,7 @@ export const App = () => {
         <Route
         path="/contacts"
         element={
-          <PrivateRoute redirectTo="/login" component={<ContatctsPage />}/>
+          <PrivateRoute redirectTo="/login" component={<ContactsPage />}/>
         } 
         />
       </Route>
