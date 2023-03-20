@@ -41,8 +41,8 @@ export const ButtonLog = styled.button`
   cursor: pointer;
   outline: none;
   :hover {
-    background-color: #FFA500;
+    background-color: #800080;
     color: #ffff;
-    border: 2px solid #FFA500;
+    border: 2px solid #800080;
   }
 `;
