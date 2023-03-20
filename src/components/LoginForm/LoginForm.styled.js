@@ -17,7 +17,7 @@ export const InputLogin = styled.input`
   width: 100%;
   font: inherit;
   font-size: 20px;
-  border: 2px solid #ff9999;
+  border: 2px solid #DA70D6;
   border-radius: 3px;
   margin-top: 3px;
   outline: none;
@@ -34,15 +34,15 @@ export const ButtonLog = styled.button`
   font: inherit;
   width: 100%;
   height: 35px;
-  border: 2px solid #e6b0aa;
-  border-radius: 3px;
-  background-color: #e6b0aa;
+  border: 4px solid #DA70D6;
+  border-radius: 15px;
+  background-color: #DA70D6;
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   outline: none;
   :hover {
-    background-color: #ff9999;
+    background-color: #FFA500;
     color: #ffff;
-    border: 2px solid #ff9999;
+    border: 2px solid #FFA500;
   }
 `;

@@ -28,7 +28,7 @@ margin-top: 20px;
 margin-bottom: 10px;
 padding: 0 16px 0 16px;
 height: 40px;
-border-radius: 5px;
+border-radius: 15px;
 color: black;
 background-color: white;
 font-size: 20px;
