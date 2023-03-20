@@ -13,15 +13,19 @@ export const ButtonDelete = styled.button`
   margin-top: 10px;
   margin-bottom: 5px;
   padding: 0 16px 0 16px;
-  background-color: #606060;
+  background-color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   font-family: inherit;
   font-size: 20px;
   height: 40px;
   max-width: 100px;
-  color: white;
+  color: black;
   cursor: pointer;
+  :hover {
+    color: #ffff;
+    background-color: #800080;
+    cursor: pointer; }
 `;
 export const ContactItem = styled.li`
   display: flex;

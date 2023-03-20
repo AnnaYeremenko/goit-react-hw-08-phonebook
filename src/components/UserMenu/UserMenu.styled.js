@@ -15,7 +15,7 @@ export const ButtonLogout = styled.button`
   border-radius: 4px;
   text-decoration: none;
   color: white;
-  background-color: #e57373;
+  background-color: #800080;
   font-weight: 500;
   border: none;
   :last-child {
@@ -24,4 +24,8 @@ export const ButtonLogout = styled.button`
   :first-child {
     margin-right: 20px;
   }
+  :hover {
+    color: black;
+    background-color: white;
+    cursor: pointer; }
 `;

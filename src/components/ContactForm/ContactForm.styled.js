@@ -18,8 +18,8 @@ export const InputText = styled.input`
 font-size: 20px;
 min-width: 300px;
 min-height: 40px;
-color: green;
-border-radius: 7px;
+color: #800080;
+border-radius: 10px;
 margin-bottom: 10px;
 `;
 export const Button = styled.button`
@@ -35,6 +35,6 @@ font-size: 20px;
 cursor: pointer;
 :hover {
   color: #ffff;
-  background-color: #606060;
+  background-color: #800080;
   cursor: pointer; }
 `;
